@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 주문 페이지 (결제 시스템)
 
-## Getting Started
+### ⚒️ 스킬 셋 및 이용 도구
+- TypeScript, Next.js, TailwindCSS, shadecn/ui
+- 주소 찾기 API(예정), PG 연결(예정)
 
-First, run the development server:
+</br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ⭐️ 결제 페이지 핵심 기능
+- 쿠폰
+- 포인트
+- PG 연결 및 처리
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 필요한 요소
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 주문 상품 정보
+    - 제품 사진
+    - 제품명
+    - 수량
+    - 가격
+- 주문자 정보
+    - 이름
+    - 번호
+    - 아이디(이메일)
+- 배송 정보 (수정 버튼)
+    - 이름
+    - 번호
+    - 주소 (API)
+    - 상세주소
+    - 배송 메모 (select)
+- 쿠폰 / 포인트
+    - 쿠폰 (쿠폰 적용 button)
+        - 모달 - 쿠폰 리스트
+        - 쿠폰 번호 (쿠폰 등록 button)
+    - 포인트 (전액사용 button)
+        - 보유 포인트
+        - 포인트 사용 조건 ✨
+- 상품 정보
+    - 상품 이름
+    - 회사명
+    - 상품 수량
+    - 상품 금액
+    - 배송비
+    - 상품 이미지
+- 최종 결제 금액
+    - 상품 가격 (수량)
+    - 쿠폰 사용
+    - 포인트 사용
+    - 배송비
+    - 총 결제 금액
+    - 적립 예정 포인트
+- 결제 방법 (PG 연결)
+    - 결제수단 체크박스
+        - 신용카드
+        - 가상계좌
+        - 무통장 입금
+        - 핸드폰 결제
+        - 간편 결제
+    - 체크 박스 선택에 따른 하단 내용
+        - ex) 무통장 입금
+            - 계좌번호 제시
+            - 입금자명 Input
+            - 주의 및 안내 사항 (주문 후, 6시간 동안 미입금 시 자동 취소됩니다.)
+            - 현금영수증 신청
+    - 결제 확인 동의 체크박스 (전체 동의)
+        - 구매조건 확인 및 결제 진행에 동의✨
+- 결제하기 버튼
