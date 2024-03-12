@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import Item from './[id]/Item';
+import Item from './Item';
 import Subtitle from '../ui/subtitle';
 import Title from '../ui/title';
 

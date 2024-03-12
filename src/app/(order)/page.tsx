@@ -1,6 +1,6 @@
-import DeliveryAddress from '@/components/delivery/Address';
-import Orderer from '@/components/order/Orderer';
-import Product from '@/components/product/Product';
+import DeliveryAddress from '@/components/delivery-info/Address';
+import Orderer from '@/components/Orderer';
+import Product from '@/components/product/ProductList';
 import React from 'react';
 
 const Order = () => {

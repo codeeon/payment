@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import Title from '../ui/title';
+import Title from './ui/title';
 
 type Props = { children: string };
 
