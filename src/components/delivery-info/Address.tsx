@@ -10,11 +10,12 @@ import { Button } from '../ui/button';
 
 const Address = () => {
   return (
-    <Card className='w-[600px]'>
+    <Card className='overflow-auto'>
       <CardHeader>
         <CardTitle>배송지</CardTitle>
       </CardHeader>
-      <CardContent className='flex justify-between'>
+      <hr />
+      <CardContent className='flex justify-between mt-7'>
         <div>
           <Subtitle className='block'>codeeon</Subtitle>
           <Text className='block text-slate-600 mt-1'>010-9876-5243</Text>

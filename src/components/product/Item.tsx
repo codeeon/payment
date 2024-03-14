@@ -17,7 +17,8 @@ type ItemData = {
   deliveryPrice: number;
 };
 
-type Props = { children: ItemData };
+// type Props = { children: ItemData };
+type Props = { children: ItemData | string };
 
 const Item = ({ children }: Props) => {
   return (
@@ -25,7 +26,8 @@ const Item = ({ children }: Props) => {
       <CardHeader>
         <CardDescription>itemData.company</CardDescription>
         <Subtitle>itemData.title</Subtitle>
-        <CardDescription>itemData.selection</CardDescription>
+        {/* itemData.map(itemData => <CardDescription>itemData.selection, itemData.quantity</CardDescription>) */}
+        <CardDescription>itemData.selection, itemData.quantity</CardDescription>
       </CardHeader>
       <CardContent className='flex justify-between'>
         <div>itemData.imgurl</div>

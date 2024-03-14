@@ -22,13 +22,11 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <head />
-      <body
-        className={cn(
-          'min-h-screen bg-background font-sans antialiased flex items-center justify-center',
-          fontSans.variable
-        )}
-      >
-        {children}
+      <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
+        <header className='flex items-center justify-center'>
+          <h1 className='text-3xl font-bold mt-8 mb-14 '>주문/결제하기</h1>
+        </header>
+        <div className='flex items-center justify-center'>{children}</div>
       </body>
     </html>
   );

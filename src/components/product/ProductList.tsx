@@ -11,13 +11,17 @@ const Product = () => {
       <CardHeader>
         <CardTitle>주문 상품</CardTitle>
       </CardHeader>
+      <hr />
       <CardContent>
         {/* itemData.map(item => Item id=item.id item Item) */}
-        <Item id='itemData.id'>itemData</Item>
-        <Item id='itemData.id'>itemData</Item>
+        {/* <Item id='itemData.id'>itemData</Item> */}
+        {/* <Item id='itemData.id'>itemData</Item> */}
+        <Item>아이템 데이터</Item>
+        <Item>아이템 데이터</Item>
       </CardContent>
-      <CardFooter className='flex justify-between'>
-        <Title className=''>주문 금액</Title>
+      <hr />
+      <CardFooter className='flex justify-between mt-6'>
+        <Title>주문 금액</Title>
         <Subtitle className='mr-2'>6,000 ₩</Subtitle>
       </CardFooter>
     </Card>
