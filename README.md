@@ -1,7 +1,7 @@
 ## 주문 페이지 (결제 시스템)
 
 ### ⚒️ 스킬 셋 및 이용 도구
-- TypeScript, Next.js, TailwindCSS, shadecn/ui
+- TypeScript, Next.js, TailwindCSS, shadcn/ui
 - 주소 찾기 API(예정), PG 연결(예정)
 
 </br>
