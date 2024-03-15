@@ -7,7 +7,9 @@ import { Button } from './ui/button';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
 const PaymentWidget = () => {
-  const clientKey = process.env.NEXT_PUBLIC_TOSS_WIDGET_CLIENT_KEY;
+  const clientKey = process.env.NEXT_PUBLIC_TOSS_WIDGET_CLIENT_KEY
+    ? process.env.NEXT_PUBLIC_TOSS_WIDGET_CLIENT_KEY
+    : '';
   const customerKey = 'eFDEH0HfqvuN4NPzjjpkX';
 
   // 결제위젯 초기화: async/await을 사용하는 경우
