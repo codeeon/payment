@@ -13,6 +13,8 @@ import {
 import Subtitle from './ui/subtitle';
 import { Input } from './ui/input';
 import Text from './ui/text';
+import PaymentWidget from './PaymentWidget';
+import Title from './ui/title';
 
 const PriceList = () => {
   const [payPoint, setPayPoint] = useState('0');
@@ -58,7 +60,7 @@ const PriceList = () => {
           </Text>
         </div>
         <div className='p-3 pr-0'>
-          <div className='flex items-center gap-14 mb-2'>
+          <div className='flex justify-between items-center gap-14 mb-2'>
             <span className='min-w-max'>포인트 사용</span>
             <div className='flex items-center gap-2'>
               <Input value={payPoint} onChange={onChange} className='text-right' />
@@ -90,9 +92,8 @@ const PriceList = () => {
           </div>
         </div>
       </CardContent>
-      <hr />
-      <CardFooter className='mt-6'>
-        <Subtitle>결제 수단 선택</Subtitle>
+      <CardFooter className='flex-col items-start'>
+        <PaymentWidget />
       </CardFooter>
     </Card>
   );
